@@ -65,7 +65,7 @@ public class SignServiceImpl implements SignService {
     }
 
     @Override
-    public SignUpResultDto signIn(String id, String password) throws RuntimeException {
+    public SignInResultDto signIn(String id, String password) throws RuntimeException {
         LOGGER.info("[getSignInResult] signDataHandler로 회원 정보 요청");
         User user = userRepository.getByUid(id);
         LOGGER.info("[getSignInResult] id : {}", id);
